@@ -29,6 +29,7 @@ class Input extends Component {
   handleComposition(e) {
     if (e.type === 'compositionend') {
       this.onComposition = false
+      this.propsHandleChange(this.state.value)
     } else {
       this.onComposition = true
     }
